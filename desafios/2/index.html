@@ -15,7 +15,7 @@
         let costoTotal = precioUnitario * cantidadDeseada;
         if (cantidadDeseada >= 5) {
             let descuento = costoTotal * 0.10;
-            costoTotal = descuento;
+            costoTotal = costoTotal - descuento;
             alert(`El costo total de tu compra (con descuento para más de 5 productos) es: \n$${costoTotal}`);
         } else {
             alert(`El costo total de tu compra es: $${costoTotal}`);
