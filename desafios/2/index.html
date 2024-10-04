@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let nombreProducto = "Zapatos";
+        let precioUnitario = 50;
+        let cantidadDeseada;
+        cantidadDeseada = prompt(`¿Cuántos ${nombreProducto} deseas comprar?`);
+        cantidadDeseada = Number(cantidadDeseada);
+        let costoTotal = precioUnitario * cantidadDeseada;
+        if (cantidadDeseada >= 5) {
+            let descuento = costoTotal * 0.10;
+            costoTotal = descuento;
+            alert(`El costo total de tu compra (con descuento para más de 5 productos) es: \n$${costoTotal}`);
+        } else {
+            alert(`El costo total de tu compra es: $${costoTotal}`);
+        }
+    </script>
+</body>
+</html>
