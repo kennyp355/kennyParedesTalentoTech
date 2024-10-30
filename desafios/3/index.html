@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function sumaProductos (precioUnitario, cantidadDeseada) {
+        //     let totalGastado = precioUnitario * cantidadDeseada;
+        //     console.log("Total gastado: " + totalGastado);
+        // }
+
+        // sumaProductos(100, 3);
+
+        let sumarProductos = (precioUnitario, cantidadDeseada) => {
+        let totalGastado = precioUnitario * cantidadDeseada;
+        return totalGastado;
+        }
+
+        let precioInicial = 100;
+        let totalDeseado = 3;
+        let precioTotal = sumarProductos(precioInicial, totalDeseado);
+        console.log(`El precio de tu compra es de: \n${precioTotal}`)
+    </script>
+</body>
+</html>
