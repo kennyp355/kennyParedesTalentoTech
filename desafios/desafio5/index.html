@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let productos = ["Laptop", "Mouse", "Teclado", "Monitor", "Impresora"];
+        alert("Lista de productos disponibles:");
+        for(let i = 0; i < productos.length; i++) {
+            alert(productos[i]);
+        }
+        alert("...\nActualizando stock después de cada venta:");
+        for(let i = productos.length; i > 0; i--) {
+            productos.pop();
+            alert("Nuevo stock de productos: " + productos);
+        }
+    </script>
+</body>
+</html>
